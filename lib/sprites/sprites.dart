@@ -6,7 +6,7 @@ import 'package:flame/game.dart';
 class Sprites extends Game {
   late SpriteAnimation runningRobot;
 
-  final robotPosition = Vector2(70, 400);
+  final robotPosition = Vector2(100, 500);
   final robotSize = Vector2(48, 60);
 
   @override
