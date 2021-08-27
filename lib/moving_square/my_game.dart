@@ -1,8 +1,9 @@
+import 'package:estudo_flame/moving_square/game_object.dart';
 import 'package:flame/game.dart';
 import 'package:flame/palette.dart';
 import 'package:flutter/material.dart';
 
-class MyGame extends Game {
+class MovingSquare extends Game {
   late GameObject square;
 
   @override
@@ -23,13 +24,4 @@ class MyGame extends Game {
   void render(Canvas canvas) {
     canvas.drawRect(square.position, square.paint);
   }
-}
-
-class GameObject {
-  int speed = 400;
-  Rect position;
-  int direction = 1;
-  final paint = BasicPalette.white.paint();
-
-  GameObject(this.position);
 }
